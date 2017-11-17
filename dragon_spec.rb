@@ -48,12 +48,4 @@ describe 'Dragon' do
     pet.rock
     expect(pet.asleep).to eq(false)
   end
-
-  # it 'should test if action works in recursivo method' do
-  #   name = 'Dolly'
-  #   owner_name = 'Babi'
-  #   pet = Dragon.new(name,owner_name)
-  #   pet.recursivo
-  #   expect(pet.recursivo).to eq(acao)
-  # end
 end
