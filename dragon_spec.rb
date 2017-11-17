@@ -48,4 +48,5 @@ describe 'Dragon' do
     pet.rock
     expect(pet.asleep).to eq(false)
   end
+
 end
