@@ -1,4 +1,7 @@
 require './dragon'
+require './blue_dragon.rb'
+require './red_dragon.rb'
+
 #MAIN
 puts "WELCOME TO THE DRAGON BABY TAMAGOSHI WORLD"
 
@@ -42,7 +45,7 @@ else
     acao = gets.chomp
     pet.recursivo(acao)
   else
-    puts "ERRO!! TENTE NOVAMENTE!! \n Digite S ou N:" #TRATAR ESSE ERRO ASSIM QUE FOR PEDIDO FAZENDO DO..WHILE. COD ABAIXO ERRADO. 
+    puts "ERRO!! TENTE NOVAMENTE!! \n Digite S ou N:" #TRATAR ESSE ERRO ASSIM QUE FOR PEDIDO FAZENDO DO..WHILE. COD ABAIXO ERRADO.
     pet.menu
     acao = gets.chomp
     pet.recursivo(acao)

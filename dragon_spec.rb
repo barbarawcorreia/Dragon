@@ -1,4 +1,6 @@
 require_relative './dragon'
+require_relative './blue_dragon'
+require_relative './red_dragon'
 
 describe 'Dragon' do
   it 'should create a dragon' do
@@ -49,4 +51,23 @@ describe 'Dragon' do
     expect(pet.asleep).to eq(false)
   end
 
+  it 'should create a new baby blue dragon and test his own methods' do
+    name = 'Dolly'
+    owner_name = 'Babi'
+    pet = Blue_dragon.new(name, owner_name)
+    pet.swim
+    pet.feed
+    expect(pet.name).to eq name
+    expect(pet.owner_name).to eq owner_name
+  end
+
+  it 'should create a new baby red dragon and test his own methods' do
+    name = 'Dolly'
+    owner_name = 'Babi'
+    pet = Red_dragon.new(name, owner_name)
+    pet.spit_fire
+    pet.feed
+    expect(pet.name).to eq name
+    expect(pet.owner_name).to eq owner_name
+  end
 end
